@@ -18,6 +18,14 @@ body {
     margin: 0 auto;
 }
 
+.row {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
 
 /* contents */
 
@@ -27,4 +35,17 @@ body {
 
 .odd-cell {
     background-color: forestgreen;
+}
+
+.grid-cell {
+    width: calc(100% / 10);
+    height: 120px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid div {
+    user-select: none;
 }
