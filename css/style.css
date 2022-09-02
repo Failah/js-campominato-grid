@@ -20,3 +20,11 @@ body {
 
 
 /* contents */
+
+.even-cell {
+    background-color: cornflowerblue;
+}
+
+.odd-cell {
+    background-color: forestgreen;
+}

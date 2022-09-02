@@ -29,4 +29,36 @@ const button = document.getElementById('activation-button');
 button.addEventListener('click',
     function () {
         console.log('Hai cliccato il bottone di generazione griglia!');
+
+        let grid = document.getElementById('grid');
+        grid.innerHTML = '';
+
+        for (let i = 1; i <= 100; i++) {
+            const gridCell = document.createElement('div');
+
+            gridCell.className = 'grid-cell';
+            gridCell.innerHTML = i;
+
+            gridCell.addEventListener('click',
+                function () {
+                    console.log('Hai cliccato la cella numero: ', i);
+
+                    let numberEven = checkNumberEven(i);
+
+                    if (numberEven) {
+                        gridCell.classList.add('even-cell');
+                    } else {
+                        gridCell.classList.add('odd-cell');
+                    }
+                });
+
+            grid.append(gridCell);
+        }
     });
+
+
+// FUNCTIONS
+
+function checkNumberEven(num) {
+    return num % 2 === 0;
+}
