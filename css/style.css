@@ -8,6 +8,7 @@
 
 body {
     font-family: sans-serif;
+    background-color: bisque;
 }
 
 
@@ -16,6 +17,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 .row {
@@ -29,6 +31,16 @@ body {
 
 /* contents */
 
+#activation-button {
+    padding: 10px 20px;
+    background-color: grey;
+    color: pink;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
 .even-cell {
     background-color: cornflowerblue;
 }
@@ -39,7 +51,7 @@ body {
 
 .grid-cell {
     width: calc(100% / 10);
-    height: 120px;
+    height: 118px;
     border: 2px solid black;
     display: flex;
     justify-content: center;
@@ -48,4 +60,14 @@ body {
 
 #grid div {
     user-select: none;
+}
+
+/* effects */
+
+#activation-button:hover {
+    cursor: pointer;
+}
+
+#activation-button:active {
+    transform: scale(0.95);
 }
