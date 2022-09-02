@@ -24,3 +24,9 @@ Le validazioni e i controlli possiamo farli anche in un secondo momento.
 */
 
 
+const button = document.getElementById('activation-button');
+
+button.addEventListener('click',
+    function () {
+        console.log('Hai cliccato il bottone di generazione griglia!');
+    });
